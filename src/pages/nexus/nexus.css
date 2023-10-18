@@ -1,0 +1,48 @@
+/* CUSTOM VARIABLES */
+
+:root {
+  /* COLORS */
+  --body-color: #506474;
+  --elements-bg: #b8ccdc;
+  --white: #ffffff;
+  --dark: #040414;
+}
+
+ul {
+  list-style: none;
+}
+
+.page-wrapper {
+  background-color: var(--body-color);
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.right-side-nav {
+  width: 110px;
+  border-radius: 5px;
+  background-color: var(--elements-bg);
+}
+
+.right-side-nav > h4 {
+  background-color: var(--dark);
+  color: var(--white);
+  margin: 0;
+}
+
+.right-side-nav > ul {
+  margin: 0;
+  padding: 0;
+}
+
+.right-side-nav > ul > li {
+  padding-left: 0.3rem;
+  border: 1px var(--dark) solid;
+}
+
+.right-side-nav > h4,
+.right-side-nav > ul > li {
+  padding: 0.3rem 0;
+}
