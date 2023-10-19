@@ -1,3 +1,6 @@
+/* MAYBE ITS BETTER TO DIVIDE INTO SEVERAL COMPONENTS (LEFT-NAV, RIGHT-NAV,... ) AND PLACE THEM ON THE MAIN LAYOUT */
+
+import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import "./nexus.css";
 
 const Nexus = () =>{
@@ -11,9 +14,9 @@ const Nexus = () =>{
          <ul>
   {menuItems.map((item, index) => (
     <li key={index}>
-      {item} {index < menuItems.length - 2 ? <span>&#8594;</span> : null}
-      {index === menuItems.length - 2 ? <span>h</span> : null}
-      {index === menuItems.length - 1 ? <span>q</span> : null}
+      {item} {index < menuItems.length - 2 ? <span className='icon right-icon arrow-icon' ><ArrowRightIcon sx={{}}/></span> : null}
+      {index === menuItems.length - 2 ? <span className='icon right-icon'>h</span> : null}
+      {index === menuItems.length - 1 ? <span className='icon right-icon'>q</span> : null}
     </li>
   ))}
 </ul>

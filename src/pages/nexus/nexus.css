@@ -30,6 +30,7 @@ ul {
   background-color: var(--dark);
   color: var(--white);
   margin: 0;
+  padding: 0;
 }
 
 .right-side-nav > ul {
@@ -40,9 +41,17 @@ ul {
 .right-side-nav > ul > li {
   padding-left: 0.3rem;
   border: 1px var(--dark) solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 1.5rem;
 }
 
 .right-side-nav > h4,
 .right-side-nav > ul > li {
-  padding: 0.3rem 0;
+  padding: 3px;
+}
+
+.right-icon {
+  font-size: 1rem;
 }
