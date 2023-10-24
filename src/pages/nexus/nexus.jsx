@@ -1,6 +1,7 @@
 /* MAYBE ITS BETTER TO DIVIDE INTO SEVERAL COMPONENTS (LEFT-NAV, RIGHT-NAV,... ) AND PLACE THEM ON THE MAIN LAYOUT */
 import React, { useState } from 'react';
 import InfoWindow from './InfoWindow'; 
+import Rightnav from './Rightnav';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import "./nexus.css";
 
@@ -16,8 +17,8 @@ const Nexus = () =>{
     "Edit",
     "Links",
     "Style",
-    "Print..",
-    "Page Layout..",
+    "Print...",
+    "Page Layout...",
     "Windows",
     "Services",
     "Hide",
@@ -59,6 +60,7 @@ const Nexus = () =>{
         {/* Add similar conditional rendering for other menu items */}
       </div>
     </div>
+    <Rightnav/>
         </div>
     )
 }

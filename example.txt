@@ -1,0 +1,22 @@
+
+List of web browsers from the oldest to the most modern:
+
+WorldWideWeb (Nexus) - 1990: This is considered the first web browser ever created by Tim Berners-Lee. It was text-based and used to access the World Wide Web.
+
+Mosaic - 1993: Developed by the National Center for Supercomputing Applications (NCSA), Mosaic was one of the earliest graphical web browsers.
+
+Netscape Navigator - 1994: Netscape Navigator was one of the most popular browsers of its time and played a significant role in the early growth of the web.
+
+Internet Explorer - 1995: Developed by Microsoft, Internet Explorer became the dominant web browser during the late 1990s and early 2000s.
+
+Mozilla Firefox - 2002: Firefox, developed by Mozilla, gained popularity for its speed and adherence to web standards.
+
+Google Chrome - 2008: Google's Chrome browser quickly gained market share due to its speed and simplicity.
+
+Apple Safari - 2003 (Windows release in 2007): Initially exclusive to Apple devices, Safari eventually became available on Windows.
+
+Microsoft Edge - 2015: Microsoft Edge replaced Internet Explorer as the default browser in Windows 10.
+
+Opera - 1995: Opera has a long history and is known for its features like a built-in ad blocker and VPN.
+
+Brave - 2016: Brave is a relatively new browser that focuses on privacy and security, with built-in ad blocking.
