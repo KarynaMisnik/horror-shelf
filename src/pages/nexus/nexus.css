@@ -13,31 +13,32 @@ ul {
 }
 
 .page-wrapper {
+  display: flex;
+  flex-direction: row;
   background-color: var(--body-color);
-  width: 100vw;
-  height: 100vh;
   margin: 0;
   padding: 0;
 }
 
-.right-side-nav {
+.left-side-nav {
   width: 140px;
+  height: 340px;
   border-radius: 5px;
   background-color: var(--elements-bg);
 }
 
-.right-side-nav > p {
+.left-side-nav > p {
   background-color: var(--dark);
   color: var(--white);
   font-size: 1rem;
 }
 
-.right-side-nav > ul {
+.left-side-nav > ul {
   margin: 0;
   padding: 0;
 }
 
-.right-side-nav > ul > li {
+.left-side-nav > ul > li {
   padding-left: 0.3rem;
   border: 1px var(--dark) solid;
   display: flex;
@@ -46,8 +47,8 @@ ul {
   height: 1.5rem;
 }
 
-.right-side-nav > p,
-.right-side-nav > ul > li {
+.left-side-nav > p,
+.left-side-nav > ul > li {
   padding: 5px;
 }
 
@@ -85,4 +86,8 @@ ul {
   position: absolute;
   top: 10px;
   right: 10px;
+}
+
+main {
+  flex: 1;
 }

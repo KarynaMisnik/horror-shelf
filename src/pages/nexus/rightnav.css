@@ -1,11 +1,13 @@
 .container {
   display: flex;
   flex-direction: column;
+  padding-right: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .square {
-  width: 100px; /* Adjust the size as needed */
-  height: 100px; /* The width and height make it a square */
-  background-color: #3498db; /* Background color */
-  margin: 5px; /* Margin for spacing between squares */
+  width: 70px;
+  height: 70px;
+  background-color: var(--elements-bg);
+  border-bottom: 1px solid black;
 }

@@ -38,7 +38,7 @@ const Nexus = () =>{
     return(
         
         <div className="page-wrapper">
-            <div className="right-side-nav">
+            <div className="left-side-nav">
                 <p>WorldWideWeb</p>
          <ul>
         {menuItems.map((item, index) => (
@@ -60,7 +60,10 @@ const Nexus = () =>{
         {/* Add similar conditional rendering for other menu items */}
       </div>
     </div>
+    <main></main>
+    <div className='right-nav'>
     <Rightnav/>
+    </div>
         </div>
     )
 }
