@@ -1,4 +1,5 @@
 // InfoWindow.js
+/*opens window in the center*/
 import React from 'react';
 
 function InfoWindow({ onClose }) {
@@ -7,7 +8,7 @@ function InfoWindow({ onClose }) {
       <div className="modal-content">
         <h1>content will be here</h1>
         <button onClick={onClose} className="close-button">
-          Close
+          Close 
         </button>
       </div>
     </div>
