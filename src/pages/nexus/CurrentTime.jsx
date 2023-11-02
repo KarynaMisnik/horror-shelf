@@ -32,9 +32,11 @@ const  CurrentTime = () => {
         {formattedHours}:{minutes < 10 ? '0' : ''}{minutes}:{seconds < 10 ? '0' : ''} {ampm}
       </p>
       <div sx={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
+
       <p>{dayOfWeek} </p>
       <p>{time.getDate()} </p>
       <p>{month} </p>
+      
       </div>
     </div>
   );
