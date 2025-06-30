@@ -10,3 +10,11 @@
   list-style: none;
   outline: none;
 }
+
+.btn {
+  display: inline-block;
+  padding: 30px 50px;
+  background-color: #040404;
+  border-radius: 8px;
+  position: relative;
+}
