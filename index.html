@@ -11,10 +11,11 @@
     <div id="page-wrapper">
         <h1>Horror Shelf</h1>
         <div class="movie-card">
-            <form action="/main.js" method="post">
-                <label for="fname">Title:</label>
+            <form id="add-movie-form">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title"><br><br>
+                <button type="submit" class="btn add">Add Movie</button>
             </form>
-            <button class="btn add">Add Movie</button>
         </div>
     </div>
 </body>
