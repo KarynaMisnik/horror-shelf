@@ -24,7 +24,31 @@ form.addEventListener("submit", function (e) {
   text_description.textContent = description;
   const editButton = document.createElement("button");
   editButton.textContent = "Edit";
-  editButton.addEventListener("click", function () {});
+  editButton.addEventListener("click", function () {
+    const title_p = card.querySelector("p");
+    const desc_p = card.querySelectorAll("p")[1];
+    const titleInput = document.createElement("input");
+    titleInput.value = title_p.textContent;
+    const descInput = document.createElement("input");
+    descInput.value = desc_p.textContent;
+
+    card.replaceChild(titleInput, title_p);
+    card.replaceChild(descInput, desc_p);
+    editButton.textContent = "Save";
+    if (editButton.textContent === "Edit") {
+      editButton.textContent = "Save";
+    } else {
+      editButton.textContent = "Edit";
+    }
+    const newTitle_p = document.createElement("p");
+    newTitle_p.textContent = titleInput.value;
+
+    const newDesc_p = document.createElement("p");
+    newDesc_p.textContent = descInput.value;
+
+    card.replaceChild(newTitle_p, titleInput);
+    card.replaceChild(newDesc_p, descInput);
+  });
 
   card.appendChild(title_p);
   card.appendChild(text_description);
