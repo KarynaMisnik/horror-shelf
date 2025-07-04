@@ -25,29 +25,37 @@ form.addEventListener("submit", function (e) {
   const editButton = document.createElement("button");
   editButton.textContent = "Edit";
   editButton.addEventListener("click", function () {
-    const title_p = card.querySelector("p");
-    const desc_p = card.querySelectorAll("p")[1];
-    const titleInput = document.createElement("input");
-    titleInput.value = title_p.textContent;
-    const descInput = document.createElement("input");
-    descInput.value = desc_p.textContent;
-
-    card.replaceChild(titleInput, title_p);
-    card.replaceChild(descInput, desc_p);
-    editButton.textContent = "Save";
     if (editButton.textContent === "Edit") {
+      // Switch to edit mode: replace <p> with <input>
+      const title_p = card.querySelector("p");
+      const desc_p = card.querySelectorAll("p")[1];
+
+      const titleInput = document.createElement("input");
+      titleInput.value = title_p.textContent;
+
+      const descInput = document.createElement("input");
+      descInput.value = desc_p.textContent;
+
+      card.replaceChild(titleInput, title_p);
+      card.replaceChild(descInput, desc_p);
+
       editButton.textContent = "Save";
     } else {
+      // Save mode: replace <input> with <p>
+      const titleInput = card.querySelector("input");
+      const descInput = card.querySelectorAll("input")[1];
+
+      const newTitle_p = document.createElement("p");
+      newTitle_p.textContent = titleInput.value;
+
+      const newDesc_p = document.createElement("p");
+      newDesc_p.textContent = descInput.value;
+
+      card.replaceChild(newTitle_p, titleInput);
+      card.replaceChild(newDesc_p, descInput);
+
       editButton.textContent = "Edit";
     }
-    const newTitle_p = document.createElement("p");
-    newTitle_p.textContent = titleInput.value;
-
-    const newDesc_p = document.createElement("p");
-    newDesc_p.textContent = descInput.value;
-
-    card.replaceChild(newTitle_p, titleInput);
-    card.replaceChild(newDesc_p, descInput);
   });
 
   card.appendChild(title_p);
