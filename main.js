@@ -17,12 +17,19 @@ form.addEventListener("submit", function (e) {
   error.textContent = ""; // Clear any previous error messages
 
   // Add movie
-  const p = document.createElement("p");
+  const card = document.createElement("div");
+  const title_p = document.createElement("p");
   const text_description = document.createElement("p");
-  p.textContent = title;
+  title_p.textContent = title;
   text_description.textContent = description;
-  movieList.appendChild(p);
-  movieList.appendChild(text_description);
+  const editButton = document.createElement("button");
+  editButton.textContent = "Edit";
+  editButton.addEventListener("click", function () {});
+
+  card.appendChild(title_p);
+  card.appendChild(text_description);
+  card.appendChild(editButton);
+  movieList.appendChild(card);
 
   // Clear input
   titleInput.value = "";
