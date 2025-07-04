@@ -18,9 +18,9 @@ form.addEventListener("submit", function (e) {
 
   // Add movie
   const card = document.createElement("div");
-  const title_p = document.createElement("p");
+  const title_p = document.createElement("p"); // Create a <p> element for the title
   const text_description = document.createElement("p");
-  title_p.textContent = title;
+  title_p.textContent = title; // .textContent puts your movie title into that <p>
   text_description.textContent = description;
   const editButton = document.createElement("button");
   editButton.textContent = "Edit";
