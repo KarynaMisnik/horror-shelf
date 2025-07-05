@@ -24,6 +24,8 @@ form.addEventListener("submit", function (e) {
   text_description.textContent = description;
   const editButton = document.createElement("button");
   editButton.textContent = "Edit";
+  const deleteButton = document.createElement("button");
+  deleteButton.textContent = "Delete";
   editButton.addEventListener("click", function () {
     if (editButton.textContent === "Edit") {
       // Switch to edit mode: replace <p> with <input>
@@ -58,9 +60,12 @@ form.addEventListener("submit", function (e) {
     }
   });
 
+  deleteButton.addEventListener("click", function () {});
+
   card.appendChild(title_p);
   card.appendChild(text_description);
   card.appendChild(editButton);
+  card.appendChild(deleteButton);
   movieList.appendChild(card);
 
   // Clear input
