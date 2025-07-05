@@ -60,7 +60,11 @@ form.addEventListener("submit", function (e) {
     }
   });
 
-  deleteButton.addEventListener("click", function () {});
+  deleteButton.addEventListener("click", function () {
+    if (confirm("Are you sure you want to delete this movie?")) {
+      movieList.removeChild(card);
+    }
+  });
 
   card.appendChild(title_p);
   card.appendChild(text_description);
