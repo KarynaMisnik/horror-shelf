@@ -32,3 +32,25 @@ button {
 input {
   border: 1px solid black;
 }
+
+footer {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: #040404;
+}
+
+.api-logo {
+  max-width: 120px; /* don’t let it grow too big */
+  width: 100%; /* make it responsive */
+  height: auto; /* maintain aspect ratio */
+  opacity: 0.8; /* slightly transparent for subtlety */
+  transition: opacity 0.1s ease;
+}
+
+footer .api-logo:hover {
+  opacity: 1; /* fully visible on hover */
+}
