@@ -41,6 +41,9 @@ footer {
   text-align: center;
   padding: 10px;
   background-color: #040404;
+  color: white;
+  display: flex;
+  flex-direction: column;
 }
 
 .api-logo {
