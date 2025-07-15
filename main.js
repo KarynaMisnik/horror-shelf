@@ -64,6 +64,7 @@ form.addEventListener("submit", async function (e) {
 
   const movie = await fetchMovieData(title);
 
+  // MOVIE CARD STYLE
   const card = document.createElement("div");
   card.style.border = "1px solid #ccc";
   card.style.padding = "10px";
@@ -84,6 +85,21 @@ form.addEventListener("submit", async function (e) {
   const title_p = document.createElement("p");
   title_p.textContent = movie ? movie.title : title;
   card.appendChild(title_p);
+
+  const description = document.createElement("p");
+  const releaseDate = document.createElement("p");
+
+  if (movie && movie.poster_path) {
+    img.src = `https://image.tmdb.org/t/p/w200${movie.poster_path}`;
+    description.textContent = movie.overview;
+    releaseDate.textContent = `Release Date: ${movie.release_date}`;
+  } else {
+    description.textContent = "There is no description";
+    releaseDate.textContent = "Release Date: Not available";
+  }
+
+  card.appendChild(description);
+  card.appendChild(releaseDate);
 
   // Edit button
   const editButton = document.createElement("button");
